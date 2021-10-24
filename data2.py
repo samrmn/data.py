@@ -13,8 +13,16 @@ plt.ylabel('collected sales packagings')
 
 plt.plot(data['year'], data['glas'], label='glas')
 plt.plot(data['year'],data['paper'],label='paper')
-plt.plot(data['year'],data['metals'],label='metals')
 plt.plot(data['year'],data['mixed packaging'],label='mixed packaging')
+
+plt.legend()
+plt.show()
+
+plt.title('Used Packaging in Germany (in 1000tons)', fontdict= {'fontweight' :'bold','fontsize' : 18})
+plt.xlabel('year')
+plt.ylabel('collected sales packagings')
+
+plt.plot(data['year'],data['metals'],label='metals')
 plt.plot(data['year'],data['composites'],label='composites')
 plt.plot(data['year'],data['plastics'],label= 'plastics')
 
